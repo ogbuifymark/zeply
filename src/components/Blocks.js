@@ -52,8 +52,8 @@ const Blocks = () => {
 
     return (
         <Card style={{ width: '100%', aLignItem: 'flex-start' }}>
-            <Card.Header style={{ color: 'black' }}>Blocks</Card.Header>
-            <Card.Body style={{backgroundColor: 'gray'}}>
+            <Card.Header data-testid="block-header" style={{ color: 'black' }}>Blocks</Card.Header>
+            <Card.Body  style={{backgroundColor: 'gray'}}>
                 <Table striped="columns" bordered hover size="sm" >
                     <thead>
                         <tr>

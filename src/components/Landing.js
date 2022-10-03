@@ -15,11 +15,13 @@ function Landing() {
     return (
 <Container >
 <Link style={{display: 'flex', justify: 'flex-start'}} to='/subscriptions'>subscriptions</Link>
+<header>
+<h1 data-testid="heading" className="header">Welcome To Bitcoin Information Dashboard</h1>
 
-            <h1 className="header">Welcome To Bitcoin Information Dashboard</h1>
+</header>
             <br />
-            <SearchPage />
-            <AddressOverview />
+            <SearchPage  />
+            <AddressOverview data-testid="addressoverview" />
             <Row>
               <Col><Transactions/></Col>
               <Col><Blocks/></Col>

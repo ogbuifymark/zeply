@@ -12,10 +12,10 @@ const AddressOverview = () => {
     }, [])
     return(
 <Card style={{ width: '100%', aLignItem: 'flex-start' }}>
-              <Card.Header style={{ color: 'black' }}>Overview</Card.Header>
+              <Card.Header data-testid="address-header" style={{ color: 'black' }}>Overview</Card.Header>
               <Card.Body >
               {addressInfo !== null && addressInfo !== undefined?
-                <Table striped="columns" bordered hover size="sm">
+                <Table data-testid="address-table" striped="columns" bordered hover size="sm">
                     <tbody >
                     <tr>
                       <td>address</td>

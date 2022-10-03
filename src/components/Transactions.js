@@ -53,7 +53,7 @@ const Transactions = () => {
     };
     return(
 <Card style={{ width: '100%', aLignItem: 'flex-start' }}>
-              <Card.Header style={{ color: 'black' }}>Transactions</Card.Header>
+              <Card.Header data-testid="trans-header" style={{ color: 'black' }}>Transactions</Card.Header>
               <Card.Body >
                 <Table striped="columns" bordered hover size="sm">
                     <thead>

@@ -24,14 +24,15 @@ const SearchPage = () => {
                 navigate('/transaction')
             }
         }
+        
     }
   return (
     <>
     <div className="row">
     <div className="col-md-8">
     <div className="input-group mb-3">
-        <input type="text" onChange={(e) => setSearchInput(e.target.value)} className="form-control form-control-lg" placeholder="Search transactionHash/wallet address "/>
-        <button type="submit" onClick={(e) => handleAddressGeneration(e)} className="input-group-text btn-success"><i className="bi bi-search me-2"></i> Search</button>
+        <input type="text" data-testid="search-input" onChange={(e) => setSearchInput(e.target.value)} className="form-control form-control-lg" placeholder="Search transactionHash/wallet address"/>
+        <button type="submit" data-testid="search-button" onClick={(e) => handleAddressGeneration(e)} className="input-group-text btn-success"><i className="bi bi-search me-2"></i> Search</button>
     </div>
     </div>
     
