@@ -7,6 +7,7 @@ import { BrowserRouter,Routes ,Route} from 'react-router-dom';
 import GeneralProvider, {GeneralContext} from './Context';
 import Landing from './components/Landing';
 import Transaction from './components/Transaction';
+import Subscription from './components/subscriptions/Subsribtions';
 
 
 
@@ -23,6 +24,7 @@ function App() {
                     <Routes>
                     <Route path="/" element={<Landing />} />
                     <Route path="/transaction" element={<Transaction />} />
+                    <Route path="/subscriptions" element={<Subscription />} />
                     </Routes>
                     </BrowserRouter>
         </GeneralProvider>

@@ -14,6 +14,9 @@ export const GeneralProvider = ({ children }) => {
   const [transactionInfo, setTransactionInfo] = useState();
   const [transactions, setTransactions] = useState([]);
   const [blocks, setBlocks] = useState([]);
+  const [subBlocks, setSubBlocks] = useState([]);
+  const [subTransactions, setSubTransactions] = useState([]);
+
  
 
  
@@ -50,6 +53,8 @@ export const GeneralProvider = ({ children }) => {
         transactions,setTransactions,
         getBlocksInfo,
         blocks, setBlocks,
+        subBlocks, setSubBlocks,
+        subTransactions, setSubTransactions,
         wallet
       }}
     >
