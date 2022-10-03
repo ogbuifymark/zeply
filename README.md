@@ -5,6 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+#### `before run` 
+You might need to install Cors plugin to enable you make api call the endpoint 
+
+Also you need to create a .env file and add the base url `REACT_APP_BASEURL=https://blockchain.info`
 
 ### `npm start`
 
