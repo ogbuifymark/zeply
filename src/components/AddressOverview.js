@@ -37,6 +37,10 @@ const AddressOverview = () => {
                       <td>balance</td>
                       <td>{addressInfo.final_balance}</td>
                     </tr> 
+                    <tr>
+                      <td>number of transaction</td>
+                      <td>{addressInfo.n_tx}</td>
+                    </tr>
                   </tbody>
     </Table>
     : null
